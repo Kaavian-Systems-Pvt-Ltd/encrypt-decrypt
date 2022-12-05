@@ -1,5 +1,5 @@
 const rsa = require('node-rsa');
-
+require('dotenv').config();
  function keys(x){
     const key= new rsa();
     key.importKey(x);
