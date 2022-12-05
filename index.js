@@ -7,26 +7,24 @@ require('dotenv').config();
 }
 /**
  * 
- * @param {key} k node rsa public key
  * @param {string} str value to be encrypted
- * @returns encrypted value  
+ * @returns encrypted value
  */
-function encryption(str){
+function encrypt(str){
     const y= keys(`${process.env.PUBLIC_KEY}`)
     const a = y.encrypt(str,'base64');
     return a;
 }
 /**
  * 
- * @param {key} k node rsa private key  
- * @param {string} str encrypted value
+ * @param {string} str encrypted value 
  * @returns decrypted value
  */
-function decryption(str){
+function decrypt(str){
     const y= keys(`${process.env.PRIVATE_KEY}`)
     const b = y.decrypt(str,'utf8');
     return b;
 }
 module.exports={
-    encryption,decryption
+    encrypt,decrypt
 }
