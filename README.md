@@ -6,7 +6,7 @@
 ### In your package.json file in dependencies just 
 ## "encrypt-decrypt":"https://github.com/Kaavian-Systems-Pvt-Ltd/encrypt-decrypt.git" 
 Require the package in your file and thus you can make use of the functions 
-## encrypt() and decrypt()
+### encrypt() and decrypt()
 # encrypt function
 This function needs one parameter that needs to be encrypted  
 ex: ab.encrypt(value_to_be_encrypted);
