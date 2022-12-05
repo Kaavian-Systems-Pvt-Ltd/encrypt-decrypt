@@ -11,8 +11,8 @@ require('dotenv').config();
  * @param {string} str value to be encrypted
  * @returns encrypted value  
  */
-function encryption(k,str){
-    const y= keys(k)
+function encryption(str){
+    const y= keys(`${process.env.PUBLIC_KEY}`)
     const a = y.encrypt(str,'base64');
     return a;
 }
@@ -22,8 +22,8 @@ function encryption(k,str){
  * @param {string} str encrypted value
  * @returns decrypted value
  */
-function decryption(k,str){
-    const y= keys(k)
+function decryption(str){
+    const y= keys(`${process.env.PRIVATE_KEY}`)
     const b = y.decrypt(str,'utf8');
     return b;
 }
