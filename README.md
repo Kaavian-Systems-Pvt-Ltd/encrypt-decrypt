@@ -16,5 +16,5 @@ Encryption uses RSA PUBLIC KEY
 This function needs one parameter that needs to be decrypted  
 ex: ab.decrypt(encrypted_value);
 It returns the decrypted value in utf8 form . 
-Encryption uses RSA PRIVATE KEY
+Decryption uses RSA PRIVATE KEY
 
