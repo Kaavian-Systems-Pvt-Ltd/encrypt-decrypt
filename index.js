@@ -22,7 +22,7 @@ function encryption(k,str){
  * @param {string} str encrypted value
  * @returns decrypted value
  */
-function decryption(str){
+function decryption(k,str){
     const y= keys(k)
     const b = y.decrypt(str,'utf8');
     return b;
