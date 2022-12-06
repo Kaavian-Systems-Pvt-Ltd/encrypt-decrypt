@@ -2,6 +2,7 @@
 
 This package allows you to encrypt your data using your RSA PUBLIC KEY and decrypt the encrypted data ONLY by using your RSA PRIVATE KEY
 #### note: Store your RSA KEY PAIR in env file as PUBLIC_KEY="" AND PRIVATE_KEY="".
+If you have a key pair just paste -----BEGIN PUBLIC KEY----- and -----END PUBLIC KEY----- in the begining and end of your public key respectively and -----BEGIN RSA PRIVATE KEY----- and -----END RSA PRIVATE KEY----- in the begining and end of your private key respectively . Thus you made your key pair into RSA key pair
 ## STEPS TO DO :
  In your package.json file in dependencies just paste
 ### "encrypt-decrypt":"https://github.com/Kaavian-Systems-Pvt-Ltd/encrypt-decrypt.git" 
