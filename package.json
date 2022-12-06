@@ -1,10 +1,10 @@
 {
-  "name": "encrypt_decrypt",
+  "name": "encrypt-decrypt",
   "version": "1.0.0",
   "description": "kaavian-rsa-encrypt-decrypt\r ##\r This package allows you to encrypt your data using your RSA PUBLIC KEY\r and decrypt the encrypted data ONLY by using your RSA PRIVATE KEY\r User can generate RSA KEY PAIRS with help of websites like\r #\r https://travistidwell.com/jsencrypt/demo/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc jasmine --config=spec/support/jasmine.json"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   "homepage": "https://github.com/Kaavian-Systems-Pvt-Ltd/encrypt-decrypt#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "node-rsa": "^1.1.1"
+    "jasmine": "^4.5.0",
+    "node-rsa": "^1.1.1",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.0"
   }
 }
