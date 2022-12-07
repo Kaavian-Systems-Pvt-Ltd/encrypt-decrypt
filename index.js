@@ -2,10 +2,10 @@ const Rsa = require ('node-rsa');
 require ('dotenv').config ();
 
 module.exports = class npmModule {
-  static keys(x) {
+  static keys(userkey) {
     try{
       const key = new Rsa ();
-      key.importKey (x);
+      key.importKey (userkey);
       return (key);
     }catch (err) {
       throw new Error ('Key must be a RSA key pair (or) Provide necessary keys ' , err);
