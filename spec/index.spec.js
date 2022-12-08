@@ -4,7 +4,7 @@ require ('dotenv').config ();
 const npmModule = require ('../index');
 const sandbox = sinon.createSandbox ();
 const files = require ('../index');
- new npmModule ();
+new npmModule ();
 
 describe ('Key Function' , ()=> {
     afterEach ( ()=> {
