@@ -17,11 +17,11 @@ module.exports = class npmModule {
     }
   }
 
-  /**
- *
- * @param {string} str value to be encrypted
- * @returns encrypted value base64 format
- */
+//   /**
+//  *
+//  * @param {string} str value to be encrypted
+//  * @returns encrypted value base64 format
+//  */
   static encrypt(str) {
     try {
       const keyobject = npmModule.keys (`${process.env.PUBLIC_KEY}`);

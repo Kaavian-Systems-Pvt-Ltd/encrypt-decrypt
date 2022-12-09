@@ -1,10 +1,10 @@
 const sinon = require ('sinon');
 const { keys , encrypt , decrypt } = require ('../index');
 require ('dotenv').config ();
-const npmModule = require ('../index');
+ const npmModule = require ('../index');
 const sandbox = sinon.createSandbox ();
 const files = require ('../index');
-new npmModule ();
+ new npmModule ();
 
 describe ('Key Function' , ()=> {
     afterEach ( ()=> {
@@ -19,6 +19,7 @@ describe ('Key Function' , ()=> {
     it ('Convert string to rsa key object for encryption' , async ()=> { 
         sandbox.stub (files , 'keys').returns ('qwerftghjsxdcfvbnxxcvb');
         const value = files.keys (`${process.env.PUBLIC_KEY}`);
+        // console.log (value , 1);
         expect (value).toBe ('qwerftghjsxdcfvbnxxcvb');
     });
     it ('Convert string to rsa key object for decryption' , async ()=> { 
